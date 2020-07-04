@@ -1,0 +1,7 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(29, 72, 110);
+    padding: 5rem;
+    margin-top: 1rem;
+}
