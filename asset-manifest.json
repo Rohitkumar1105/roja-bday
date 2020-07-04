@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/roja-bday/static/css/main.281cb7d4.chunk.css",
+    "main.js": "/roja-bday/static/js/main.2bba4cda.chunk.js",
+    "main.js.map": "/roja-bday/static/js/main.2bba4cda.chunk.js.map",
+    "runtime-main.js": "/roja-bday/static/js/runtime-main.d36c28e9.js",
+    "runtime-main.js.map": "/roja-bday/static/js/runtime-main.d36c28e9.js.map",
+    "static/css/2.fb346933.chunk.css": "/roja-bday/static/css/2.fb346933.chunk.css",
+    "static/js/2.f010ad7c.chunk.js": "/roja-bday/static/js/2.f010ad7c.chunk.js",
+    "static/js/2.f010ad7c.chunk.js.map": "/roja-bday/static/js/2.f010ad7c.chunk.js.map",
+    "index.html": "/roja-bday/index.html",
+    "precache-manifest.e365f1aad43d3e12e22c95c736e5af3a.js": "/roja-bday/precache-manifest.e365f1aad43d3e12e22c95c736e5af3a.js",
+    "service-worker.js": "/roja-bday/service-worker.js",
+    "static/css/2.fb346933.chunk.css.map": "/roja-bday/static/css/2.fb346933.chunk.css.map",
+    "static/css/main.281cb7d4.chunk.css.map": "/roja-bday/static/css/main.281cb7d4.chunk.css.map",
+    "static/js/2.f010ad7c.chunk.js.LICENSE.txt": "/roja-bday/static/js/2.f010ad7c.chunk.js.LICENSE.txt",
+    "static/media/byju1.png": "/roja-bday/static/media/byju1.ce0105b4.png",
+    "static/media/byju2.png": "/roja-bday/static/media/byju2.9a2ae062.png",
+    "static/media/byju3.png": "/roja-bday/static/media/byju3.3c8ad823.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d36c28e9.js",
+    "static/css/2.fb346933.chunk.css",
+    "static/js/2.f010ad7c.chunk.js",
+    "static/css/main.281cb7d4.chunk.css",
+    "static/js/main.2bba4cda.chunk.js"
+  ]
+}
