@@ -21,7 +21,7 @@ import Pic16 from '../Images/Slider/Pic16.jpg'
 
 const SliderB = () => {
     return (
-        <div id="carouselExampleIndicators" className="carousel slide container-fluid" data-ride="carousel" >
+        <div id="carouselExampleIndicators" className="carousel slide container" data-ride="carousel" >
             {/* <ol className="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -139,7 +139,7 @@ const SliderB = () => {
                 <div className="carousel-item">
                     <img className="d-block w-100" src={Pic16} alt="Third slide" />
                     <div className="text-center text-white">
-                        <p>Bachpan toh gaya, Jawani bhi gayi, Ek pak toh ab hume jeene do..</p>
+                        <p>Bachpan toh gaya, Jawani bhi gayi, Ek pal toh ab hume jeene do..</p>
                     </div>
                 </div>
             </div>
