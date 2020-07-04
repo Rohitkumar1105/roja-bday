@@ -1,12 +1,11 @@
 import React from 'react';
-import Slider from './Components/Slider.js'
 import Friends from './Components/Friends'
-// import Cousins from './Components/Cousins.js'
+import SliderB from './Components/SliderB'
 
 function App() {
   return (
     <div>
-      <Slider />
+      <SliderB />
       <Friends />
     </div>
   );

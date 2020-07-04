@@ -1,0 +1,10 @@
+img {
+    height: 500px;
+    width: 700px;
+    object-fit: contain;
+    padding: 1rem 0;
+}
+
+.carousel {
+    background-color: rgb(29, 72, 110);;
+}

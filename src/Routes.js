@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import App from './App'
-// import Mosaic from './Components/Mosaic.js'
 import Friends_Normal from './Components/Friends_normal'
 
 

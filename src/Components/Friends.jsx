@@ -55,7 +55,7 @@ const Friends = () => {
 
     return (
         <div className="container">
-            <h3>Look at what your FRIENDS have to say</h3>
+            <h3>Look at what your FRIENDS have to say on your special day..! </h3>
             <div className="row">
                 {
                     list.map((item, index) => {
