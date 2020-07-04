@@ -1,10 +1,12 @@
 import React from 'react'
-import { storage } from '../Firebase'
-import b3 from '../Images/byju3.png'
+// import { storage } from '../Firebase'
+// import b3 from '../Images/byju3.png'
 
 const Friends_Vids = (props) => {
     //https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2FDarshu.mp4?alt=media&token=f926c074-d46b-4d27-a0c7-f8a507c9a23d
-    
+    if(!props){
+        return "Loading..."
+    }
 
     const list = [
         { url: 'Vivek', alt: 'vivek'},
