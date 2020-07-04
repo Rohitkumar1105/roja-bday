@@ -5,3 +5,10 @@
     padding: 5rem;
     margin-top: 1rem;
 }
+
+.slider img {
+    object-fit: contain;
+    width: 200px;
+    height: 500px;
+    padding-left: -10rem;
+}

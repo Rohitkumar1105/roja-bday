@@ -41,8 +41,6 @@ const Friends_Normal = (props) => {
         { url: Varsha, alt: 'Varsha'},
         { url: Yogesh, alt: 'Yogesh'},
         
-        // { url: '', alt: 'Sadiya'}, 
-        // { url: b3, alt: 'swetha'}, 
         { url: 'https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2FAnmol.mp4?alt=media&token=e44be1ba-1f0e-422c-917f-28f332d3ef6c', alt: 'Anmol'}, 
         { url: 'https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2FMeghu.mp4?alt=media&token=c6faf57b-091c-42fb-a82a-5a3fa8a35251', alt: 'Meghu'},
         { url: 'https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2FDivya.mp4?alt=media&token=7cc0c345-b30f-4b1c-bdfe-489f1509b05a', alt: 'Divya'}, 
@@ -72,11 +70,6 @@ const Friends_Normal = (props) => {
             {
                 props.match.params.name === 'Shwetha' ? <Shwetha /> : null
             }
-            
-            {/* <video controls>
-                <source src="gs://rojabday.appspot.com/Anmol.mp4" type="video/mp4" />
-                Your browser does not support HTML video.
-            </video>  */}
         </div>
     )
 }

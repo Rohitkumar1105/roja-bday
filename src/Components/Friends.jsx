@@ -60,7 +60,7 @@ const Friends = () => {
                 {
                     list.map((item, index) => {
                         return (
-                            <div className="col-sm-12 col-md-3" key={index}>
+                            <div className="col-sm-6 col-md-3" key={index}>
                                 <div className="card">
                                     <Link to={`${process.env.PUBLIC_URL}/${item.alt}`}>
                                         <img src={item.url} alt={item.alt} />
