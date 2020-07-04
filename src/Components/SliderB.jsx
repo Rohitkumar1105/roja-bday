@@ -67,7 +67,6 @@ const SliderB = () => {
                     <img className="d-block w-100" src={Pic4} alt="Third slide" />
                     <div className="text-center text-white">
                         <p>Aloo toh tera fav hai re baba. Piri Piri toh jaan se bhi pyara :p</p>
-                        <p>PS: IDK ye image ulta kyu hai -_-</p>
                     </div>
                 </div>
                 <div className="carousel-item">
@@ -121,7 +120,7 @@ const SliderB = () => {
                 <div className="carousel-item">
                     <img className="d-block w-100" src={Pic13} alt="Third slide" />
                     <div className="text-center text-white">
-                        <p>Again, IDK..! </p>
+                        <p>This was one expensive brunch</p>
                     </div>
                 </div>
                 <div className="carousel-item">
