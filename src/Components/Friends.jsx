@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import '../css/Friends.css'
 import b1 from '../Images/byju1.png'
@@ -9,32 +10,28 @@ const Friends = () => {
 
 
     const list = [
-        { url: b1, alt: 'vivek'},
-        { url: b2, alt: 'sakshu'},
-        { url: b3, alt: 'ravil'}, 
-        { url: b3, alt: 'sangram'}, 
-        { url: b3, alt: 'manju'}, 
-        { url: b3, alt: 'sahaar'}, 
-        { url: b3, alt: 'sadiya'}, 
-        { url: b3, alt: 'swetha'}, 
-        { url: b3, alt: 'anmol'}, 
-        { url: b3, alt: 'upas'}, 
-        { url: b1, alt: 'Meghu'},
-        { url: b2, alt: 'Siri'},
-        { url: b3, alt: 'Pavan'}, 
-        { url: b3, alt: 'Darshu'},
-        { url: b3, alt: 'sujit'}, 
-        { url: b3, alt: 'Divya'}, 
-        { url: b3, alt: 'gandha'}, 
-        { url: b3, alt: 'yogesh'}, 
         { url: b3, alt: 'Arpit'}, 
+        { url: b3, alt: 'Darshu'},
+        { url: b3, alt: 'Gandha'}, 
+        { url: b3, alt: 'Harsha'}, 
+        { url: b3, alt: 'Manju'}, 
+        { url: b3, alt: 'Pavan'}, 
+        { url: b3, alt: 'Ravil'}, 
+        { url: b3, alt: 'Sahaar'}, 
+        { url: b2, alt: 'Sakshu'},
+        { url: b3, alt: 'Sangram'}, 
+        { url: b2, alt: 'Sirisha'},
+        { url: b3, alt: 'Sujit'}, 
+        { url: b3, alt: 'Upasini'}, 
+        { url: b3, alt: 'Varsha'}, 
+        { url: b1, alt: 'Vivek'},
+        { url: b3, alt: 'Yogesh'}, 
 
-        //Yet to give
-        // { url: b3, alt: 'varsha'}, 
-        // { url: b3, alt: 'tanmay'}, 
-        // { url: b3, alt: 'sangyaa'}, 
-        // { url: b3, alt: 'sushmita'}, 
-        // { url: b3, alt: 'santhyaa'}, 
+        // { url: b3, alt: 'sadiya'}, 
+        // { url: b3, alt: 'swetha'}, 
+        // { url: b3, alt: 'Divya'}, 
+        // { url: b1, alt: 'Meghu'},
+        // { url: b3, alt: 'anmol'}, 
     ]
 
     return (
@@ -46,9 +43,9 @@ const Friends = () => {
                         return (
                             <div className="col-sm-12 col-md-3" key={index}>
                                 <div className="card">
-                                    <a href={`${process.env.PUBLIC_URL}/${item.alt}`}>
+                                    <Link to={`${process.env.PUBLIC_URL}/${item.alt}`}>
                                         <img src={item.url} alt={item.alt} />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         )
