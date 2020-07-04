@@ -5,13 +5,16 @@
 }
 
 .container .card{
-    border-radius: 50px;
+    /* border-radius: 100px; */
+    border: none;
+    align-items: center;
     margin: 1rem;
+    width: auto;
 }
 
 .container .card img{
-    border-radius: 30px;
+    border-radius: 100px;
     height: 150px;
-    /* width: 150px; */
-    /* object-fit: fill; */
+    width: 150px;
+    object-fit: contain;
 }

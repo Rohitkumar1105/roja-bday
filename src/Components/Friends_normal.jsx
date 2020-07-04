@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/Friends_normal.css'
 
 import Arpit from '../Videos/Arpit.mp4'
 import Darshu from '../Videos/Darshu.mp4'
@@ -16,6 +17,9 @@ import Upasini from '../Videos/Upasini.mp4'
 import Varsha from '../Videos/Varsha.mp4'
 import Vivek from '../Videos/Vivek.mp4'
 import Yogesh from '../Videos/Yogesh.mp4'
+
+import Sadiya from './Sadiya'
+import Shwetha from './Shwetha'
 
 const Friends_Normal = (props) => {
 
@@ -36,12 +40,12 @@ const Friends_Normal = (props) => {
         { url: Sujit, alt: 'Sujit'},
         { url: Varsha, alt: 'Varsha'},
         { url: Yogesh, alt: 'Yogesh'},
-
-        // { url: b3, alt: 'sadiya'}, 
+        
+        // { url: '', alt: 'Sadiya'}, 
         // { url: b3, alt: 'swetha'}, 
-        // { url: 'Anmol', alt: 'anmol'}, 
-        // { url: 'Meghu', alt: 'Meghu'},
-        // { url: 'Divya', alt: 'Divya'}, 
+        { url: 'https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2FAnmol.mp4?alt=media&token=e44be1ba-1f0e-422c-917f-28f332d3ef6c', alt: 'Anmol'}, 
+        { url: 'https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2FMeghu.mp4?alt=media&token=c6faf57b-091c-42fb-a82a-5a3fa8a35251', alt: 'Meghu'},
+        { url: 'https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2FDivya.mp4?alt=media&token=7cc0c345-b30f-4b1c-bdfe-489f1509b05a', alt: 'Divya'}, 
     ]
 
     return (
@@ -53,14 +57,20 @@ const Friends_Normal = (props) => {
                         return (
                             <div key={index}>
                                 <video controls>
-                                    <source src={item.url} type="video/mp4" />
+                                    <source src={item.url} type="video/mp4"  />
                                     <source src="movie.ogg" type="video/ogg" />
                                     Your browser does not support HTML video.
                                 </video> 
                             </div>
                         )
-                    }
+                    } 
                 })
+            }
+            {
+                props.match.params.name === 'Sadiya' ? <Sadiya /> : null
+            }
+            {
+                props.match.params.name === 'Shwetha' ? <Shwetha /> : null
             }
             
             {/* <video controls>
