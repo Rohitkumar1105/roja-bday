@@ -49,27 +49,31 @@ const Friends_Normal = (props) => {
     return (
         <div className="container">
             <h3>{props.match.params.name}</h3>
-            {
-                list.map((item, index) => {
-                    if(item.alt === props.match.params.name){
-                        return (
-                            <div key={index}>
-                                <video controls>
-                                    <source src={item.url} type="video/mp4"  />
-                                    <source src="movie.ogg" type="video/ogg" />
-                                    Your browser does not support HTML video.
-                                </video> 
-                            </div>
-                        )
-                    } 
-                })
-            }
-            {
-                props.match.params.name === 'Sadiya' ? <Sadiya /> : null
-            }
-            {
-                props.match.params.name === 'Shwetha' ? <Shwetha /> : null
-            }
+            <div className="row">
+                <div className="col-sm-12">
+                {
+                    list.map((item, index) => {
+                        if(item.alt === props.match.params.name){
+                            return (
+                                <div key={index}>
+                                    <video controls>
+                                        <source src={item.url} type="video/mp4"  />
+                                        <source src="movie.ogg" type="video/ogg" />
+                                        Your browser does not support HTML video.
+                                    </video> 
+                                </div>
+                            )
+                        } 
+                    })
+                }
+                {
+                    props.match.params.name === 'Sadiya' ? <Sadiya /> : null
+                }
+                {
+                    props.match.params.name === 'Shwetha' ? <Shwetha /> : null
+                }
+                </div>
+            </div>
         </div>
     )
 }

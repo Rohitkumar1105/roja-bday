@@ -1,5 +1,10 @@
 video {
-    height: 700px;
-    width: 500px;
-    margin-left: 20rem;
+   height: auto;
+   width: 100%;
+}
+
+@media (min-width: 800px){
+    video {
+        height: 700px;
+    }
 }
