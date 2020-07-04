@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from './Components/Slider.js'
-import Friends from './Components/Friends.js'
+import Friends from './Components/Friends'
 // import Cousins from './Components/Cousins.js'
 
 function App() {
