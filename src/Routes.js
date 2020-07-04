@@ -10,7 +10,7 @@ const Routes = () => {
         <BrowserRouter>
             <Switch>
                 <Route exact path={`${process.env.PUBLIC_URL}/`} component={App} />
-                <Route exact path={`${process.env.PUBLIC_URL}/:name`} component={Friends_Vids} />
+                <Route path={`${process.env.PUBLIC_URL}/:name`} component={Friends_Vids} />
             </Switch>
         </BrowserRouter>
     )

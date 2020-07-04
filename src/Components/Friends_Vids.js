@@ -3,7 +3,7 @@ import React from 'react'
 // import b3 from '../Images/byju3.png'
 
 const Friends_Vids = (props) => {
-    //https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2FDarshu.mp4?alt=media&token=f926c074-d46b-4d27-a0c7-f8a507c9a23d
+    //https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2FDarshu.mp4?alt=media&
 
     const list = [
         { url: 'Vivek', alt: 'vivek'},
@@ -35,13 +35,13 @@ const Friends_Vids = (props) => {
     ]
 
     return (
-        <div>
+        <div className="container">
             <h3>{props.match.params.name}</h3>
             {
                 list.map((item, index) => {
                     if(item.alt === props.match.params.name){
                         return (
-                            <div key={index} className="container">
+                            <div key={index}>
                                 <video controls>
                                     <source src={`https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2F${item.url}.mp4?alt=media&token=f926c074-d46b-4d27-a0c7-f8a507c9a23d`} type="video/mp4" />
                                     Your browser does not support HTML video.
