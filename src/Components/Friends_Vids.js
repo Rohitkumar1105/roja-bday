@@ -1,26 +1,38 @@
-import React from 'react'
-// import { storage } from '../Firebase'
+import React, { useState, useEffect } from 'react'
+import { storage } from '../Firebase'
 // import b3 from '../Images/byju3.png'
 
 const Friends_Vids = (props) => {
+    const [url, setUrl] = useState('')
     //https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2FDarshu.mp4?alt=media&
 
+    useEffect(() => {
+        storage.ref('videos').child('Vivek.mp4').getDownloadURL().then(url => { 
+            setUrl(url) 
+            console.log(url)
+        })
+    }, [])
+
+    if(!url) {
+        return "loading..."
+    }
+
     const list = [
-        { url: 'Vivek', alt: 'vivek'},
-        { url: 'Sakshu', alt: 'sakshu'},
-        { url: 'Ravil', alt: 'ravil'}, 
-        { url: 'Sangram', alt: 'sangram'}, 
-        { url: 'Manju', alt: 'manju'}, 
-        { url: 'Sahaar', alt: 'sahaar'}, 
+        { url: url, alt: 'vivek'},
+        // { url: 'Sakshu', alt: 'sakshu'},
+        // { url: 'Ravil', alt: 'ravil'}, 
+        // { url: 'Sangram', alt: 'sangram'}, 
+        // { url: 'Manju', alt: 'manju'}, 
+        // { url: 'Sahaar', alt: 'sahaar'}, 
         // { url: b3, alt: 'sadiya'}, 
         // { url: b3, alt: 'swetha'}, 
-        { url: 'Anmol', alt: 'anmol'}, 
-        { url: 'Upasini', alt: 'upas'}, 
-        { url: 'Meghu', alt: 'Meghu'},
-        { url: 'Sirisha', alt: 'Siri'},
-        { url: 'Pavan', alt: 'Pavan'}, 
-        { url: 'Darshu', alt: 'Darshu'},
-        { url: 'Divya', alt: 'Divya'}, 
+        // { url: 'Anmol', alt: 'anmol'}, 
+        // { url: 'Upasini', alt: 'upas'}, 
+        // { url: 'Meghu', alt: 'Meghu'},
+        // { url: 'Sirisha', alt: 'Siri'},
+        // { url: 'Pavan', alt: 'Pavan'}, 
+        // { url: 'Darshu', alt: 'Darshu'},
+        // { url: 'Divya', alt: 'Divya'}, 
 
         //Yet to give
         // { url: b3, alt: 'sujit'}, 
@@ -43,7 +55,7 @@ const Friends_Vids = (props) => {
                         return (
                             <div key={index}>
                                 <video controls>
-                                    <source src={`https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2F${item.url}.mp4?alt=media&token=f926c074-d46b-4d27-a0c7-f8a507c9a23d`} type="video/mp4" />
+                                    <source src={item.url} type="video/mp4" />
                                     Your browser does not support HTML video.
                                 </video> 
                             </div>
