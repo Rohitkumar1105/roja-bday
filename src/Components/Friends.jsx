@@ -11,6 +11,7 @@ import Gandha from '../Images/Gandha.jpeg'
 import Harsha from '../Images/Harsha.jpeg'
 import Manju from '../Images/Manju.jpg'
 import Ravil from '../Images/Ravil.jpg'
+import Rohit from '../Images/Rohit.jpg'
 import Pavan from '../Images/Pavan.jpeg'
 import Sahaar from '../Images/Sahaar.jpg'
 import Sakshu from '../Images/Sakshu.jpeg'
@@ -51,6 +52,7 @@ const Friends = () => {
 
         { url: Sadiya, alt: 'Sadiya'}, 
         { url: Shwetha, alt: 'Shwetha'}, 
+        { url: Rohit, alt: 'Rohit'}, 
     ]
 
     return (

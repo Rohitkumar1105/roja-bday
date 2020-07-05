@@ -1,0 +1,16 @@
+a, h4 {
+    display: inline-block;
+    margin-right: 5rem;
+}
+
+.meme {
+    background-color:  rgb(29, 72, 110);
+}
+
+.meme img {
+    margin-left: -3rem;
+}
+.game {
+    padding: 1rem;
+    background-color: lightcoral;
+}

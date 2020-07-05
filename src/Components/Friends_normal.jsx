@@ -20,6 +20,7 @@ import Yogesh from '../Videos/Yogesh.mp4'
 
 import Sadiya from './Sadiya'
 import Shwetha from './Shwetha'
+import Rohit from './Rohit'
 
 const Friends_Normal = (props) => {
 
@@ -41,8 +42,8 @@ const Friends_Normal = (props) => {
         { url: Varsha, alt: 'Varsha'},
         { url: Yogesh, alt: 'Yogesh'},
         
-        { url: 'https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2FAnmol.mp4?alt=media&token=e44be1ba-1f0e-422c-917f-28f332d3ef6c', alt: 'Anmol'}, 
-        { url: 'https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2FMeghu.mp4?alt=media&token=c6faf57b-091c-42fb-a82a-5a3fa8a35251', alt: 'Meghu'},
+        { url: 'https://firebasestorage.googleapis.com/v0/b/bday-4a697.appspot.com/o/Anmol.mp4?alt=media&token=1545c802-3d48-4211-9a38-20ef51915180', alt: 'Anmol'}, 
+        { url: 'https://firebasestorage.googleapis.com/v0/b/bday-4a697.appspot.com/o/Meghu.mp4?alt=media&token=95e1efe6-c4bc-422b-b6e1-fe8cf2bc677c', alt: 'Meghu'},
         { url: 'https://firebasestorage.googleapis.com/v0/b/rojabday.appspot.com/o/videos%2FDivya.mp4?alt=media&token=7cc0c345-b30f-4b1c-bdfe-489f1509b05a', alt: 'Divya'}, 
     ]
 
@@ -71,6 +72,9 @@ const Friends_Normal = (props) => {
                 }
                 {
                     props.match.params.name === 'Shwetha' ? <Shwetha /> : null
+                }
+                {
+                    props.match.params.name === 'Rohit' ? <Rohit /> : null
                 }
                 </div>
             </div>
