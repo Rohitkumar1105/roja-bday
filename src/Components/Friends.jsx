@@ -52,7 +52,7 @@ const Friends = () => {
 
         { url: Sadiya, alt: 'Sadiya'}, 
         { url: Shwetha, alt: 'Shwetha'}, 
-        { url: Rohit, alt: 'Rohit'}, 
+        // { url: Rohit, alt: 'Rohit'}, 
     ]
 
     return (
