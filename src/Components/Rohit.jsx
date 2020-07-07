@@ -14,6 +14,8 @@ const Rohit = () => {
                     <source src="movie.ogg" type="video/ogg" />
                     Your browser does not support HTML video.
                 </video> 
+                <a href="https://firebasestorage.googleapis.com/v0/b/blah-2f18b.appspot.com/o/Rohit.mp4?alt=media&token=dccceed8-ba11-4f18-82c0-7f4ac9dfa770"
+                className="btn btn-info" download Content-Disposition="inline">Download Video</a>
                 <br />
                 <br />
                 <br />

@@ -62,6 +62,7 @@ const Friends_Normal = (props) => {
                                         <source src="movie.ogg" type="video/ogg" />
                                         Your browser does not support HTML video.
                                     </video> 
+                                    <a href={item.url} className="btn btn-info" download>Download Video</a>
                                 </div>
                             )
                         } 
